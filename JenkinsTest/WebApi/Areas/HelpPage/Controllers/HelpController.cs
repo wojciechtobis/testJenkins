@@ -36,7 +36,7 @@ namespace WebApi.Areas.HelpPage.Controllers
             string apiId2 = "POST-api-Values";
             if (!String.IsNullOrEmpty(apiId))
             {
-                HelpPageApiModel apiModel = Configuration.GetHelpPageApiModel(apiId2);
+                HelpPageApiModel apiModel = Configuration.GetHelpPageApiModel(apiId);
                 if (apiModel != null)
                 {
                     return View(apiModel);
