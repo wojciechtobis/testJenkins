@@ -33,7 +33,6 @@ namespace WebApi.Areas.HelpPage.Controllers
 
         public ActionResult Api(string apiId)
         {
-            string apiId2 = "POST-api-Values";
             if (!String.IsNullOrEmpty(apiId))
             {
                 HelpPageApiModel apiModel = Configuration.GetHelpPageApiModel(apiId);
